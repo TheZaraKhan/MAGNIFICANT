@@ -48,7 +48,12 @@ export default function ComingUp() {
             </p>
             <div className="md:w-1/2 mt-6">
               <div className=" grid col-span-1 gap-3">
-                <form name="newsletter" method="post">
+                <form
+                  name="newsletter"
+                  netlify
+                  onSubmit={handleSubmit}
+                  method="POST"
+                >
                   <label className=" text-xl font-semibold text-gray-700">
                     Subscribe to our Newsletter
                   </label>
