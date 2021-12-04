@@ -19,7 +19,9 @@ export default function ComingUp() {
       body: encode({ "form-name": "newsletter", name, email }),
     })
       .then(() => alert("Thanks for Subscribing!"))
-      .catch((error) => alert(error));
+      .catch((error) =>
+        alert("please enter your name and correct email to subscribe.")
+      );
     e.preventDefault();
   }
 
