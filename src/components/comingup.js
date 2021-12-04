@@ -1,6 +1,28 @@
 import React from "react";
 
 export default function ComingUp() {
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email }),
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+    e.preventDefault();
+  }
+
   return (
     <section>
       <div>
@@ -39,6 +61,7 @@ export default function ComingUp() {
                   <input type="hidden" name="form-name" value="newsletter" />
                   <div className=" flex mt-4 mb-3 px-2 border-2 border-gray-500">
                     <input
+                      id="name"
                       name="name"
                       type="text"
                       className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
@@ -47,6 +70,7 @@ export default function ComingUp() {
                   </div>
                   <div className=" flex mt-3 mb-3 px-2 border-2 border-gray-500">
                     <input
+                      id="email"
                       name="email"
                       type="email"
                       className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
