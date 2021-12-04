@@ -52,7 +52,7 @@ export default function ComingUp() {
                   name="newsletter"
                   netlify
                   onSubmit={handleSubmit}
-                  method="POST"
+                  method="post"
                 >
                   <label className=" text-xl font-semibold text-gray-700">
                     Subscribe to our Newsletter
@@ -63,7 +63,6 @@ export default function ComingUp() {
                     year collection and special discounts for our early
                     customers.
                   </p>
-                  <input type="hidden" name="form-name" value="newsletter" />
                   <div className=" flex mt-4 mb-3 px-2 border-2 border-gray-500">
                     <input
                       id="name"
