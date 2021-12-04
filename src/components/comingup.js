@@ -70,6 +70,7 @@ export default function ComingUp() {
                 <div className="grid gap-4 grid-cols-4 w-max ">
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://www.instagram.com/virsa.collections_/"
                   >
                     <svg
@@ -85,7 +86,8 @@ export default function ComingUp() {
                   </a>
 
                   <a
-                    target="_blank"
+                    target="_blank "
+                    rel="noreferrer"
                     href="https://www.pinterest.co.uk/virsacollectionsofficial/"
                   >
                     <svg
