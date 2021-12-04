@@ -8,6 +8,9 @@ export default function ComingUp() {
           <div class="md:w-3/4 mx-auto container ">
             <h1 class="  tracking-wide font-light text-gray-700  md:text-5xl text-3xl">
               VIRSA COLLECTIONS
+              <span className="tracking-widest ml-3 text-gray-400 text-xl ">
+                | COMING SOON
+              </span>
             </h1>
 
             <p class="text-gray-600 mt-6 font-light   text-lg">
