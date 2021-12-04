@@ -70,6 +70,7 @@ export default function ComingUp() {
                       type="text"
                       className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
                       placeholder="Enter your name"
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className=" flex mt-3 mb-3 px-2 border-2 border-gray-500">
@@ -79,6 +80,7 @@ export default function ComingUp() {
                       type="email"
                       className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
                       placeholder="Enter your email"
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                   <button
