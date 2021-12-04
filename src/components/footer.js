@@ -94,9 +94,9 @@ export default function Footer() {
             className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
             placeholder="Enter your Email"
           />
-          <button className="float-right">
+          {/* <button className="float-right">
             <i className="fas fa-arrow-right  text-gray-700 hover:scale-125  transform cursor-pinter transition ease-in-out duration-500" />
-          </button>
+          </button> */}
         </div>
         {/* <button className="px-6 mt-2 relative text-gray-700 text-sm w-32 py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
           Submit
