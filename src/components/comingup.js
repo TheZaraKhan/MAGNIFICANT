@@ -16,7 +16,7 @@ export default function ComingUp() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email }),
+      body: encode({ "form-name": "newsletter", name, email }),
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
