@@ -18,7 +18,7 @@ export default function ComingUp() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "newsletter", name, email }),
     })
-      .then(() => alert("Message sent!"))
+      .then(() => alert("Thanks for Subscribing!"))
       .catch((error) => alert(error));
     e.preventDefault();
   }
@@ -68,6 +68,7 @@ export default function ComingUp() {
                       id="name"
                       name="name"
                       type="text"
+                      required
                       className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
                       placeholder="Enter your name"
                       onChange={(e) => setName(e.target.value)}
@@ -78,6 +79,7 @@ export default function ComingUp() {
                       id="email"
                       name="email"
                       type="email"
+                      required
                       className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
                       placeholder="Enter your email"
                       onChange={(e) => setEmail(e.target.value)}
