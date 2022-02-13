@@ -15,9 +15,6 @@ module.exports = {
     },
     extend: {
       backgroundImage: (theme) => ({
-        hero1: "url('images/hero-1.png')",
-        hero2: "url('images/hero-4.png')",
-        hero3: "url('images/hero-3.png')",
         head: "url('images/header.jpg')",
         pebbled: "url('images/a.png')",
         store_link: "url('images/store-link.jpeg')",
