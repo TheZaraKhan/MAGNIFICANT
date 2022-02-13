@@ -28,9 +28,9 @@ export default function ComingUp() {
   return (
     <section>
       <div>
-        <div class="min-h-screen py-32 px-4 md:px-0 md:py-0 flex items-center h-full w-full bg-gray-100 ">
-          <div class="md:w-3/4 mx-auto container ">
-            <h1 class="  tracking-wide font-light text-gray-700  md:text-5xl text-3xl">
+        <div class="min-h-screen py-32 px-4 lg:px-0 lg:py-0 flex items-center h-full w-full bg-gray-100 ">
+          <div class="lg:w-3/4 mx-auto container ">
+            <h1 class="  tracking-wide font-light text-gray-700  lg:text-5xl text-3xl">
               VIRSA COLLECTIONS
               <span className="tracking-widest ml-3 text-gray-400 text-xl ">
                 | COMING SOON
@@ -48,7 +48,7 @@ export default function ComingUp() {
               are suitable for any type of occasion, from work to leisure. Our
               bags will serve you as a faithful and trusted lifelong companion.
             </p>
-            <div className="md:w-1/2 mt-6">
+            <div className="lg:w-1/2 mt-6">
               <div className=" grid col-span-1 gap-3">
                 <form
                   name="newsletter"

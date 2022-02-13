@@ -1,25 +1,39 @@
 import React from "react";
-
-import Hero from "./components/hero";
-
+import RouterMain from "./components/router_main";
 import Navbar from "./components/navbar";
-
-import Products from "./components/products";
-import About from "./components/about";
-import Amazon from "./components/amazon";
 import Footer from "./components/footer";
+import Shop from "./components/shop";
+import { Routes, Route } from "react-router-dom";
+import { ProductView } from "./components/product_view";
+import AboutUs from "./components/aboutus";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
-    <main>
+    <section>
       <Navbar />
-      <Hero />
-      <Products />
-      <Amazon />
-      <About />
-      <div className=" bg-neutral bg-opacity-50 border-t w-full   mt-10  md:py-16">
+
+      <Routes forceRefresh>
+        <Route
+          forceRefresh={true}
+          path="shop/:productId"
+          element={<ProductView tag="/shop/" />}
+        />
+        <Route exact path="/" element={<RouterMain />} />
+        <Route exact path="/about" element={<AboutUs />} />
+        <Route exact path="/shop" element={<Shop />} />
+        <Route path="/reload" component={null} key="reload" />
+      </Routes>
+
+      <div className=" bg-neutral bg-opacity-50 border-t w-full   mt-10  py-16">
         <Footer />
       </div>
-    </main>
+    </section>
   );
 }

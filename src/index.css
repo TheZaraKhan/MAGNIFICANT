@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+/* --------------------   fonts ------------------- */
+/* canela font for headings */
+@font-face {
+  font-family: "Canela";
+  src: url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.eot");
+  src: url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/4a24899e94d8236f671c1090cd9e068c.svg#Canela")
+      format("svg");
+}
+
+/* erato for body */
+
+@font-face {
+  font-family: "Erato";
+  src: url("./fonts/erato/eratolig-webfont.woff2") format("woff2"),
+    url("./fonts/erato/eratolig-webfont.woff") format("woff"),
+    url("./fonts/erato/eratolig-webfont.ttf") format("truetype"),
+    url("./fonts/erato/eratolig-webfont.svg#eratolight") format("svg");
+
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("http://fonts.cdnfonts.com/css/cleanvertising");
+@import url("http://fonts.cdnfonts.com/css/julius-sans-one");
+.font-Cleanvertising {
+  font-family: "Cleanvertising", sans-serif;
+}
+
+@font-face {
+  font-family: "Waterfall";
+  src: url("./fonts/Waterfall/Waterfall-Regular.woff2") format("woff2"),
+    url("./fonts/Waterfall/Waterfall-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-Canela {
+  font-family: "Canela";
+}
+.font-Julius-Sans {
+  font-family: "Julius Sans One", sans-serif;
+}
+.font-waterfall {
+  font-family: "Waterfall";
+}
+
+/* --------------------   fonts ------------------- */
+
 .svg {
   @apply fill-gray-500 transform transition duration-500 ease-in-out;
 }
@@ -65,8 +121,7 @@
   /*Set to match the Tailwind colour you want the active one to be */
 }
 
-
-/* spechial underline */
+/* special underline */
 
 .u-line:after {
   background: none repeat scroll 0 0 transparent;
@@ -124,4 +179,36 @@
   transition-duration: 300ms;
   transition-timing-function: linear;
   z-index: 11;
+}
+
+.carousel-image:hover {
+  @apply scale-150;
+}
+
+.carousel-item:hover {
+  @apply overflow-ellipsis;
+}
+
+/* gradiant background */
+
+.hero-background {
+  background: rgb(240, 237, 242);
+  background: linear-gradient(
+    0deg,
+    rgba(240, 237, 242, 1) 0%,
+    rgba(254, 252, 249, 1) 100%
+  );
+}
+
+.react-slider__lens .react-slider__imgZoom {
+  display: none !important;
+}
+.eapps-link[style] {
+  opacity: 0 !important;
+}
+
+@media screen and (max-width: 880px) {
+  .react-slider__imgZoom {
+    display: none;
+  }
 }

@@ -1,27 +1,41 @@
 import React from "react";
-// import { projects } from "../data";
+
 // import Slide from "react-reveal/Slide";
 // import Zoom from "react-reveal/Zoom";
 
 export default function Footer() {
   return (
-    <div className=" grid grid-cols-3 gap-5 w-3/4 mx-auto ">
-      <div>
-        <p className=" text-xl  font-semibold text-gray-700">Contact Us</p>
-        <p className="text-gray-700 mt-3 ">For Inquiries, reach out to us at</p>
-        <a
-          className="underline antialiased text-sm  hover:text-gray-500  transition duration-500 ease-in-out"
-          href="mailto:VirsaCollectionsOfficial@gmail.com"
+    <div className=" grid md:grid-cols-3 grid-cols-1 gap-5 w-3/4  mx-auto ">
+      <div className="md:order-3  order-1  grid col-span-1 gap-3">
+        <label
+          htmlFor="newsletter"
+          className=" text-xl font-semibold text-gray-700"
         >
-          virsacollectionsofficial@gmail.com
-        </a>
+          Subscribe to our Newsletter
+        </label>
+
+        <div className=" flex  border-b-2 border-gray-500">
+          <input
+            id="newsletter"
+            type="email"
+            className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
+            placeholder="Enter your Email"
+          />
+          <button className="float-right">
+            <i className="fas fa-arrow-right  text-gray-700 hover:scale-125  transform cursor-pinter transition ease-in-out duration-500" />
+          </button>
+        </div>
+        {/* <button className="px-6 mt-2 relative text-gray-700 text-sm w-32 py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
+          Submit
+        </button> */}
       </div>
-      <div>
-        <p className="text-xl text-center font-semibold text-gray-700">
-          Socials
+
+      <div className="md:order-2 order-2 mt-6 md:mt-0 ">
+        <p className="text-xl md:text-center font-semibold text-gray-700">
+          Follow Us at
         </p>
         <div className="mt-3 ">
-          <div className="grid gap-4 grid-cols-4 w-max mx-auto">
+          <div className="grid gap-4 grid-cols-4 w-max md:mx-auto">
             <a href="">
               <svg
                 className="svg mx-auto my-2"
@@ -79,28 +93,15 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" grid col-span-1 gap-3">
-        <label
-          htmlFor="newsletter"
-          className=" text-xl font-semibold text-gray-700"
+      <div className="md:order-1 order-3 mt-3 md:mt-0 ">
+        <p className=" text-xl font-semibold text-gray-700">Contact Us</p>
+        <p className="text-gray-700 mt-3 ">For Inquiries, reach out to us at</p>
+        <a
+          className="underline antialiased  hover:text-gray-500  transition duration-500 ease-in-out"
+          href="mailto:info@belasika.com"
         >
-          Subscribe to our Newsletter
-        </label>
-
-        <div className=" flex  border-b-2 border-gray-500">
-          <input
-            id="newsletter"
-            type="email"
-            className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
-            placeholder="Enter your Email"
-          />
-          {/* <button className="float-right">
-            <i className="fas fa-arrow-right  text-gray-700 hover:scale-125  transform cursor-pinter transition ease-in-out duration-500" />
-          </button> */}
-        </div>
-        {/* <button className="px-6 mt-2 relative text-gray-700 text-sm w-32 py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
-          Submit
-        </button> */}
+          info@belasika.com
+        </a>
       </div>
     </div>
   );

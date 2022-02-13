@@ -1,32 +1,32 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
-    <header id="header">
-      <div className="fixed nav hidden overflow-x-hidden md:block  w-full top-0 z-20">
+    <header id="header" className=" border-b">
+      <div className="fixed nav border-b bg-white hidden overflow-x-hidden md:block  w-full top-0 z-20">
         <div className="w-full mx-auto  flex flex-wrap  px-10 flex-col md:flex-row items-center">
           <div className=" md:my-6  ">
-            <a href="/" className=" ">
+            <Link to="/" className=" ">
               <img
-                alt="Virsa "
-                className=" w-28"
-                src="./images/site/virsa.png"
+                alt="BELAŜIKA"
+                className=" h-8"
+                src="./images/site/LOGO.png"
               />
-            </a>
+            </Link>
           </div>
           <nav className="mx-auto text-gray-700 flex space-x-10 flex-wrap text-base ">
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="   relative u-line  text-sm mx-3 py-1 transition ease-in-out duration-500"
             >
               ABOUT
-            </a>
-            <a
-              href="#products"
+            </Link>
+            <Link
+              to="/shop"
               className="   relative u-line  text-sm mx-3 py-1 transition ease-in-out duration-500"
             >
               SHOP
-            </a>
+            </Link>
 
             {/* <a
               href="#contact"
@@ -37,7 +37,7 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden  md:block">
-            <div className="grid gap-5 grid-cols-4 w-auto mx-auto">
+            <div className="grid gap-3 grid-cols-4 w-auto mx-auto">
               <a href="">
                 <svg
                   className="svg mx-auto my-2"
@@ -97,15 +97,15 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="w-full md:hidden bg-gray-100  flex">
-        <div className="flex-1">
-          <a href="/" className=" ">
+      <div className="w-full md:hidden bg-white  flex">
+        <div className="flex-1 ">
+          <Link to="/" className="">
             <img
-              alt="Virsa "
-              className="m-5 w-24"
+              alt="BELAŜIKA"
+              className="m-6 h-8"
               src="./images/site/LOGO.png"
             />
-          </a>
+          </Link>
         </div>
 
         <img
@@ -113,15 +113,18 @@ export default function Navbar() {
           src="./Images/site/menu.svg"
           alt=" "
         />
-        <div hidden className="bg-gray-200 menu h-full right-0 fixed   w-auto">
+        <div
+          hidden
+          className="bg-gray-200 menu h-full right-0 fixed w-auto  z-10  "
+        >
           <i className="fas fa-times cross h-6 float-right m-6   text-gray-500" />
           {/* <XIcon className="cross h-6 float-right m-6  text-red-50 " /> */}
           <ul className="text-gray-500 my-16 mx-10 ">
             <li className="item py-2 ">
-              <a href="#about">ABOUT</a>
+              <Link to="/about">ABOUT</Link>
             </li>
             <li className="item text-base py-2 ">
-              <a href="#Store">SHOP</a>
+              <Link to="/shop">SHOP</Link>
             </li>
             {/* <li className="item py-2 ">
               <a href="#Contact">CONTACT</a>
