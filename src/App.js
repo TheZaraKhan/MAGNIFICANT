@@ -3,7 +3,7 @@ import RouterMain from "./components/router_main";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Shop from "./components/shop";
-import { Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { ProductView } from "./components/product_view";
 import AboutUs from "./components/aboutus";
 import { useEffect } from "react";
@@ -30,7 +30,6 @@ export default function App() {
         <Route exact path="/shop" element={<Shop />} />
         <Route path="/reload" component={null} key="reload" />
       </Routes>
-
       <div className=" bg-neutral bg-opacity-50 border-t w-full   mt-10  py-16">
         <Footer />
       </div>
