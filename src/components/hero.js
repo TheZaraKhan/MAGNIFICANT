@@ -7,14 +7,15 @@ import React from "react";
 export default function Hero() {
   return (
     <section className=" ">
-      <div className="h-screen flex items-center relative bg-head bg-cover bg-top bg-no-repeat">
-        <div className="absolute   bg-black h-screen w-full top-0 opacity-20"></div>
-        <div className=" ml-32 z-10 ">
-          <p className=" text-xl text-gray-100 font-light uppercase">
+      <div className="sm:h-screen py-32 sm:py-16 flex items-center relative bg-head bg-cover bg-top bg-no-repeat">
+        <div className="absolute   bg-black h-full w-full top-0 opacity-20"></div>
+        <div className=" sm:ml-32 sm:mx-0 mx-3 z-10 text-center md:text-left ">
+          <p className=" sm:text-xl  text-gray-100 font-light sm:uppercase">
             Women's &nbsp;handmade &nbsp;Leather &nbsp;Bags
           </p>
-          <h1 className=" text-6xl break-normal text-gray-100 font-medium  my-4  font-Canela leading-relaxed ">
-            Exquisite Leather Collection <br /> marked by flawless craftsmanship
+          <h1 className=" md:text-6xl text-4xl  break-normal text-gray-100 font-medium  tracking-wide my-4  font-Canela leading-relaxed ">
+            Exquisite Leather Collection <br /> marked by{" "}
+            <br className="md:hidden block" /> flawless craftsmanship
           </h1>
           <a className=" " href="#shop">
             <button className="px-6 relative text-gray-100  py-2 border-gray-100 border-2 hover:bg-gray-100 hover:text-gray-700 text-center transition ease-in-out duration-500">
