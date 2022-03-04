@@ -15,12 +15,14 @@ module.exports = {
     },
     extend: {
       backgroundImage: (theme) => ({
-        head: "url('images/header.jpg')",
+        head: "url('images/header2.jpg')",
+        header: "url('images/header.jpg')",
         pebbled: "url('images/a.png')",
         store_link: "url('images/store-link.jpeg')",
         section: "url('images/section.png')",
       }),
       colors: {
+        beige: "#F1E1D5",
         blush: "#DDBEBE",
         neutral: "#E7E6E4",
         nude: "#E1DDD9",

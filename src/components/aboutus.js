@@ -26,10 +26,9 @@ export default function AboutUs() {
           bags serve you as a faithful and trusted lifelong companion.
         </p>
       </div>
-      <div className="w-full mt-20 ">
-        <img src="./images/site/display1.png" className="w-full " alt="" />
-      </div>
+      <div className="w-full mt-20 "></div>
       <div className="lg:w-2/4 md:w-3/4  w-5/6 sm:px-0  px-2 mx-auto">
+        <img src="./images/site/about2.jpg" className="w-full " alt="" />
         <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
           Creating Timeless Peices
         </h1>
@@ -47,17 +46,16 @@ export default function AboutUs() {
           <br />
         </p>
       </div>
-      <div className="w-full mt-20 ">
-        <img src="./images/site/display1.png" className="w-full " alt="" />
-      </div>
+      <div className="w-full mt-20 "></div>
       <div className="lg:w-2/4 md:w-3/4  w-5/6  px-2 mx-auto">
+        {" "}
+        <img src="./images/site/leather.jpeg" className="w-full " alt="" />
         <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
           Our Leather{" "}
           <p className="text-2xl   mt-5 text-gray-700   text-center tracking-wide font-light">
             Full Grain - Vegetable tanned
           </p>
         </h1>
-
         <p className="text-gray-600 font-light tracking-wider mt-10 ">
           Consistent quality is our key commitment. We only use 'full grain'
           leather which is considered the finest quality of the cow hide in the

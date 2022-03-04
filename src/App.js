@@ -3,7 +3,7 @@ import RouterMain from "./components/router_main";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Shop from "./components/shop";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { ProductView } from "./components/product_view";
 import AboutUs from "./components/aboutus";
 import { useEffect } from "react";

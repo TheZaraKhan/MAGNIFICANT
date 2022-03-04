@@ -11,7 +11,7 @@ export default function Amazon() {
           <div className="flex  flex-wrap py-10">
             <div className="md:flex-1 flex items-center md:order-1 order-2">
               <img
-                src="./images/site/amazon2.png"
+                src="./images/site/amazon.png"
                 alt=""
                 className=" md:w-5/6 float-right mx-auto  w-full "
               />

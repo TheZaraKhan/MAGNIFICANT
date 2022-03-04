@@ -7,21 +7,36 @@ import React from "react";
 export default function Hero() {
   return (
     <section className=" ">
-      <div className="sm:h-screen py-32 sm:py-16 flex items-center relative bg-head bg-cover bg-top bg-no-repeat">
-        <div className="absolute   bg-black h-full w-full top-0 opacity-20"></div>
-        <div className=" sm:ml-32 sm:mx-0 mx-3 z-10 text-center md:text-left ">
-          <p className=" sm:text-xl  text-gray-100 font-light sm:uppercase">
-            Women's &nbsp;handmade &nbsp;Leather &nbsp;Bags
-          </p>
-          <h1 className=" md:text-6xl text-4xl  break-normal text-gray-100 font-medium  tracking-wide my-4  font-Canela leading-relaxed ">
-            Exquisite Leather Collection <br /> marked by{" "}
-            <br className="md:hidden block" /> flawless craftsmanship
-          </h1>
-          <a className=" " href="#shop">
-            <button className="px-6 relative text-gray-100  py-2 border-gray-100 border-2 hover:bg-gray-100 hover:text-gray-700 text-center transition ease-in-out duration-500">
-              View Collection
-            </button>
-          </a>
+      <div className="min-h-screen py-32 sm:py-16 flex items-center  relative  bg-gradient-to-b from-beige via-beige  to-white">
+        <div className="flex items-center w-full flex-wrap">
+          <div className="md:flex-1 flex-initial w-full">
+            <div className=" md:pl-24 sm:mt-44 lg:mt-0  relative sm:mx-0 mx-3 z-10 text-center md:text-left ">
+              <p className=" sm:text-xl mb-2  text-gray-700 font-light sm:uppercase">
+                Women's &nbsp;handmade &nbsp;Leather &nbsp;Bags
+              </p>
+              <h1
+                className="  lg:text-6xl md:text-5xl text-4xl    text-gray-700 font-medium  tracking-wide my-4  font-Canela leading-loose "
+                style={{ "line-height": "1.2" }}
+              >
+                Exquisite Leather Collection <br /> marked by{" "}
+                <br className="md:hidden block" /> flawless craftsmanship
+              </h1>
+              <a className=" mt-4 " href="#shop">
+                <button className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
+                  View Collection
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="md:flex-1 flex-initial">
+            <div className="w-full ">
+              <img
+                src="./images/site/header2.png"
+                class=" mx-auto md:pr-6"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
