@@ -7,15 +7,12 @@ import React from "react";
 
 export default function AboutUs() {
   return (
-    <section id="" className="mt-6 mb-32">
-      <div className="w-full mt-16">
-        <img src="./images/site/store-front.png" className="w-full  " alt="" />
-      </div>
-      <div className="lg:w-2/4 md:w-3/4  w-5/6  px-2 mx-auto">
-        <h1 className="text-3xl  mt-32 text-gray-700  Canela text-center tracking-wide ">
+    <section id="" className=" md:mt-44 mt-32 mb-32">
+      <div className="lg:w-2/4 md:w-3/4  w-5/6 sm:px-0 mt-20 px-2 mx-auto">
+        <img src="./images/site/about1.jpg" className="w-full " alt="" />
+        <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
           Designed with Simplicity yet Elegance
         </h1>
-
         <p className="text-gray-600 font-light tracking-wider mt-10 ">
           Our goal is to provide you with a carefree user experience and give
           you a bag you can use every day for any occasion. This is why we put
@@ -26,8 +23,8 @@ export default function AboutUs() {
           bags serve you as a faithful and trusted lifelong companion.
         </p>
       </div>
-      <div className="w-full mt-20 "></div>
-      <div className="lg:w-2/4 md:w-3/4  w-5/6 sm:px-0  px-2 mx-auto">
+
+      <div className="lg:w-2/4 md:w-3/4  w-5/6 sm:px-0 mt-20 px-2 mx-auto">
         <img src="./images/site/about2.jpg" className="w-full " alt="" />
         <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
           Creating Timeless Peices
@@ -49,7 +46,7 @@ export default function AboutUs() {
       <div className="w-full mt-20 "></div>
       <div className="lg:w-2/4 md:w-3/4  w-5/6  px-2 mx-auto">
         {" "}
-        <img src="./images/site/leather.jpeg" className="w-full " alt="" />
+        <img src="./images/site/about3.jpeg" className="w-full " alt="" />
         <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
           Our Leather{" "}
           <p className="text-2xl   mt-5 text-gray-700   text-center tracking-wide font-light">
