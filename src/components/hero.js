@@ -11,8 +11,8 @@ export default function Hero() {
         <div className="flex items-center w-full flex-wrap">
           <div className="md:flex-1 flex-initial w-full">
             <div className=" md:pl-24 sm:mt-44 lg:mt-0  relative sm:mx-0 mx-3 z-10 text-center md:text-left ">
-              <p className=" sm:text-xl mb-2  text-gray-700 font-light sm:uppercase">
-                Women's &nbsp;handmade &nbsp;Leather &nbsp;Bags
+              <p className=" sm:text-xl mb-2  text-gray-700 font-light   sm:tracking-wide ">
+                Women's Handmade Leather Bags
               </p>
               <h1
                 className="  lg:text-6xl md:text-5xl text-4xl    text-gray-700 font-medium  tracking-wide my-4  font-Canela leading-loose "

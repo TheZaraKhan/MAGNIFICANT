@@ -1,5 +1,5 @@
 {
-  "name": "virsa",
+  "name": "belasika",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,9 @@
     "react-router-dom": "^6.2.1",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
     "react-zoom-slider": "^0.1.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

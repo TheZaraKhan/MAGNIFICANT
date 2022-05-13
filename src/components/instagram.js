@@ -8,7 +8,7 @@ import "react-ig-feed/dist/index.css";
 export default function Instagram() {
   return (
     <section id="about" className="  my-32">
-      <h1 className="text-4xl  text-gray-700 font-medium  text-center font-Canela tracking-widest ">
+      <h1 className="text-4xl  text-gray-700 font-bold  text-center  ">
         Follow us on Instagram
       </h1>
       <div className="  w-5/6 mx-auto gap-16 md:mt-24 mt-10 flex flex-wrap items-center">

@@ -10,10 +10,10 @@ export default function AboutUs() {
     <section id="" className=" md:mt-44 mt-32 mb-32">
       <div className="lg:w-2/4 md:w-3/4  w-5/6 sm:px-0 mt-20 px-2 mx-auto">
         <img src="./images/site/about1.jpg" className="w-full " alt="" />
-        <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
+        <h1 className="text-3xl font-Canela  mt-20 text-gray-700   text-center tracking-wide  ">
           Designed with Simplicity yet Elegance
         </h1>
-        <p className="text-gray-600 font-light tracking-wider mt-10 ">
+        <p className="text-gray-600 text-sm font-light tracking-wider mt-10 ">
           Our goal is to provide you with a carefree user experience and give
           you a bag you can use every day for any occasion. This is why we put
           so much care into every inch and stitch of the manufacturing process.
@@ -26,7 +26,7 @@ export default function AboutUs() {
 
       <div className="lg:w-2/4 md:w-3/4  w-5/6 sm:px-0 mt-20 px-2 mx-auto">
         <img src="./images/site/about2.jpg" className="w-full " alt="" />
-        <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
+        <h1 className="text-3xl font-Canela   mt-20 text-gray-700   text-center tracking-wide ">
           Creating Timeless Peices
         </h1>
 
@@ -47,7 +47,7 @@ export default function AboutUs() {
       <div className="lg:w-2/4 md:w-3/4  w-5/6  px-2 mx-auto">
         {" "}
         <img src="./images/site/about3.jpeg" className="w-full " alt="" />
-        <h1 className="text-3xl   mt-20 text-gray-700   text-center tracking-wider ">
+        <h1 className="text-3xl font-Canela mt-20 text-gray-700   text-center tracking-wide ">
           Our Leather{" "}
           <p className="text-2xl   mt-5 text-gray-700   text-center tracking-wide font-light">
             Full Grain - Vegetable tanned

@@ -18,7 +18,7 @@ export default function Amazon() {
             </div>
             <div className="flex-1 flex items-center py-16 order-1 md:order-2">
               <div className="md:w-2/4 md:ml-20 mx-auto w-5/6 ">
-                <h2 className="text-4xl tracking-wide  font-Canela  text-gray-700">
+                <h2 className="text-4xl  font-bold text-gray-700">
                   Amazon Store
                 </h2>
                 <h3 className="mt-4 tracking-wide font-light text-gray-600">

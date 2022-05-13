@@ -7,15 +7,15 @@ import { Link } from "react-router-dom";
 export default function About() {
   return (
     <section id="about" className="  my-32">
-      <h1 className="text-4xl  text-gray-700 font-medium  text-center font-Canela tracking-widest ">
+      <h1 className="text-4xl  text-gray-700    text-center font-bold  ">
         About Us
       </h1>
       <div className="lg:w-3/4 sm:w-full w-5/6 mx-auto gap-16 px-5 md:mt-24 mt-10 flex flex-wrap items-center">
         <div className="md:flex-1 flex-initial">
-          <h1 className="text-4xl  text-gray-700 font-medium  font-waterfall tracking-wider">
+          <h1 className="text-4xl  text-gray-700 font-medium  font-waterfall ">
             Our Philosophy
           </h1>
-          <p className="text-gray-600 font-light tracking-wider mt-4 mb-3">
+          <p className="text-gray-600 font-light  mt-4 mb-3">
             Hand-crafted by experienced craftsmen, Our bags collection is
             designed to be classic and timeless, without any sacrifice on style
             or functionality. All of our totes are made of natural, high-quality

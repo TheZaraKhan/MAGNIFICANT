@@ -31,10 +31,29 @@
   font-weight: normal;
   font-style: normal;
 }
-@import url("http://fonts.cdnfonts.com/css/cleanvertising");
+
+/* @import url("http://fonts.cdnfonts.com/css/cleanvertising");
 @import url("http://fonts.cdnfonts.com/css/julius-sans-one");
 .font-Cleanvertising {
   font-family: "Cleanvertising", sans-serif;
+} */
+
+@import url("http://fonts.cdnfonts.com/css/roboto");
+.font-Roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+/* @import url("http://fonts.cdnfonts.com/css/montserrat");
+
+.font-Montserrat {
+  font-family: "Montserrat", sans-serif;
+} */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("http://fonts.cdnfonts.com/css/montserrat");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -211,4 +230,9 @@
   .react-slider__imgZoom {
     display: none;
   }
+  .react-slider__lens {
+    display: none;
+  }
 }
+
+/*-------------- slick Slider ------------- */

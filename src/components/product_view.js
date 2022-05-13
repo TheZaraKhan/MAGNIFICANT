@@ -1,6 +1,6 @@
 import React from "react";
 import { products } from "../data";
-// import { Carousel } from "react-carousel-minimal";
+import { Carousel } from "react-carousel-minimal";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import SliderImage from "react-zoom-slider";
@@ -33,15 +33,14 @@ export const ProductView = (props) => {
       <div className="lg:w-4/5  mx-auto w-full">
         <div className="  grid gap-10 lg:grid-cols-2 grid-cols-1">
           <div className=" lg:col-span-1">
-            <SliderImage
+            {/* <SliderImage
               data={product.product_images}
               width="auto"
-              key={product.product_images}
               showDescription={false}
               direction="right"
-            />
+            /> */}
 
-            {/* <div className="App mb-20 img-container">
+            <div className="App mb-20 img-container">
               <Carousel
                 data={product.product_images}
                 time={2000}
@@ -58,7 +57,7 @@ export const ProductView = (props) => {
                 slideBackgroundColor="white"
                 slideImageFit="contain"
                 thumbnails={true}
-                thumbnailWidth="100px"
+                thumbnailWidth="80px"
                 style={{
                   textAlign: "center",
                   maxWidth: "500px",
@@ -66,14 +65,14 @@ export const ProductView = (props) => {
                   margin: "40px auto",
                 }}
               />
-            </div> */}
+            </div>
           </div>
           <div className="   lg:col-span-1">
             <div className="mb-20 mt-8 ">
-              <h1 className=" text-2xl text-gray-700  font-black">
+              <h1 className="  font-bold text-2xl text-gray-700 ">
                 {product.name}
               </h1>
-              <p className=" text-lg font-mono text-gray-500 mt-5">
+              <p className=" text-lg font-mono text-gray-600 mt-5">
                 <span className=" font-medium text-gray-700 ordinal">
                   — £{product.disc_price}.<span className="text-xs">99</span>
                 </span>
@@ -81,7 +80,7 @@ export const ProductView = (props) => {
                   £{product.price}.<span className="text-xs">99</span>
                 </span>
               </p>
-              <p className=" text-lg text-gray-500 mt-5">{product.color}</p>
+              <p className=" text-lg text-gray-600 mt-5">{product.color}</p>
               <div className="flex gap-3 mt-5">
                 {product.color_code.map((y) => (
                   <Link
@@ -100,18 +99,18 @@ export const ProductView = (props) => {
                   </Link>
                 ))}
               </div>
-              <div className=" text-gray-500">
-                <h3 className=" mt-6 font-medium">Details:</h3>
+              <div className=" text-gray-600">
+                <h3 className=" mt-6 font-bold">Details:</h3>
                 <ul className="list-disc ml-4 text-sm">
                   {product.bullets.map((x) => (
-                    <li className="text-gray-500 py-1" key={x.bullet}>
+                    <li className="text-gray-600 py-1" key={x.bullet}>
                       {x.bullet}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className=" text-gray-500">
-                <h3 className=" mt-6 font-medium">Dimentions:</h3>
+              <div className=" text-gray-600">
+                <h3 className=" mt-6 font-bold">Dimentions:</h3>
 
                 <table className="w-max text-sm table-fixed mt-3  ">
                   <tbody>
@@ -123,7 +122,7 @@ export const ProductView = (props) => {
                     </tr>
                     <tr className=" border-b border-gray-200">
                       <td className="border-r py-1 px-4 border-gray-200">
-                        Width
+                        Length
                       </td>
                       <td className=" py-1 px-4">
                         top - {product.size.width.top}" , base -
@@ -132,9 +131,9 @@ export const ProductView = (props) => {
                     </tr>
                     <tr className=" border-b border-gray-200">
                       <td className="border-r py-1 px-4 border-gray-200">
-                        Depth
+                        Width
                       </td>
-                      <td className=" py-1 px-4"> {product.size.depth}</td>
+                      <td className=" py-1 px-4"> {product.size.depth}"</td>
                     </tr>
                     <tr className=" ">
                       <td className="border-r py-1 px-4 border-gray-200">
@@ -149,8 +148,8 @@ export const ProductView = (props) => {
                 </table>
               </div>
 
-              <div className=" text-gray-500">
-                <h3 className=" mt-6 font-medium">Care:</h3>
+              <div className=" text-gray-600">
+                <h3 className=" mt-6  font-bold">Care:</h3>
                 <ul className="list-disc ml-4 text-sm">
                   <li className="py-1">
                     Wipe Clean with Damp cloth and air dry only in a shaded
@@ -168,11 +167,19 @@ export const ProductView = (props) => {
                   </li>
                 </ul>
               </div>
+
+              <div className="mt-5">
+                <a href={product.buy_now} target="_blank" rel="noreferrer">
+                  <button className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
+                    Buy Now
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
           <div className="   lg:col-span-2">
             <div className="mb-16 ">
-              <h1 className=" text-4xl text-gray-700 text-center font-Canela">
+              <h1 className=" text-4xl font-bold text-gray-700 text-center ">
                 Features
               </h1>
 
@@ -184,7 +191,7 @@ export const ProductView = (props) => {
                   />
                 </div>
                 <div className=" lg:order-1 lg:flex-1 flex-initial flex items-center">
-                  <p className="text-2xl  font-light text-gray-500">
+                  <p className="text-2xl  font-extralight text-gray-500">
                     {product.features[0].desc}
                   </p>
                 </div>
@@ -221,7 +228,7 @@ export const ProductView = (props) => {
           </div>
           <div className="   lg:col-span-2">
             <div className=" ">
-              <h1 className="text-4xl tracking-wide  font-Canela  text-gray-700 text-center">
+              <h1 className="text-4xl  font-bold  text-gray-700 text-center">
                 You may also Like
               </h1>
 
@@ -242,24 +249,24 @@ export const ProductView = (props) => {
                           alt={filteredProducts.display_images[0].alt}
                         />
                       </Link>
-                      <p className="text-sm  mt-6 text-center font-bold tracking-wide text-gray-800">
+                      <p className="text-sm  mt-6 text-center font-bold  text-gray-800">
                         {filteredProducts.name} - {filteredProducts.color}
                       </p>
-                      <div className="flex mt-4 text-center ">
+                      <div className="flex m-4  text-center ">
                         <div className="flex-grow  flex items-center">
                           <p className="  ">
-                            <span className=" font-medium text-gray-700 ordinal">
+                            <span className=" font-medium font-mono  text-gray-700 ordinal">
                               — £{filteredProducts.disc_price}.
                               <span className="text-xs">99</span>
                             </span>
-                            <span className="ml-4 font-medium text-gray-400 line-through">
+                            <span className="ml-4 font-medium font-mono   text-gray-400 line-through">
                               £{filteredProducts.price}.
                               <span className="text-xs">99</span>
                             </span>
                           </p>
                         </div>
                         <div className="flex-none">
-                          <button className="px-4 relative  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
+                          <button className="px-4 relative text-sm  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
                             Buy Now
                           </button>
                         </div>

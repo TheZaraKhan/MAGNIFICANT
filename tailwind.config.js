@@ -9,7 +9,7 @@ module.exports = {
       white: theme("colors.white"),
     }),
     fontFamily: {
-      sans: ["Erato", "Helvetica Neue"],
+      sans: ["Montserrat,Helvetica"],
       serif: ["Georgia"],
       mono: ["ui-monospace", "ui-monospace"],
     },

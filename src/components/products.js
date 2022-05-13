@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export const Products = (props) => {
   return (
     <section id="shop" className=" ">
-      <h1 className="text-4xl font-Canela mb-10 text-gray-700 font-medium text-center tracking-wide ">
+      <h1 className="text-4xl mb-10 text-gray-700 font-bold text-center ">
         Shop the new Collection
       </h1>
       <div className="lg:w-3/4  mx-auto w-full px-4">
@@ -47,7 +47,7 @@ export const Products = (props) => {
                       <span className="text-xs">99</span>
                     </span>
                     <span className="ml-4 font-medium text-gray-400 line-through">
-                      — £{product.price}.<span className="text-xs">99</span>
+                      £{product.price}.<span className="text-xs">99</span>
                     </span>
                   </p>
                 </div>

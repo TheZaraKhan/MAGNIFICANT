@@ -31,7 +31,7 @@ export default function Footer() {
       </div>
 
       <div className="md:order-2 order-2 mt-6 md:mt-0 ">
-        <p className="text-xl   font-semibold text-gray-700">Follow Us at</p>
+        <p className="text-xl   font-semibold text-gray-700">Follow us at</p>
         <div className="mt-3 ">
           <div className="grid gap-4 grid-cols-3 w-max  ">
             <a href="https://www.facebook.com/belasikaofficial/">
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="md:order-1 order-3 mt-3 md:mt-0 ">
-        <p className=" text-xl font-semibold text-gray-700">Contact Us</p>
+        <p className=" text-xl font-semibold text-gray-700">Contact us</p>
         <p className="text-gray-700 mt-3 ">For Inquiries, reach out to us at</p>
         <a
           className="underline antialiased  hover:text-gray-500  transition duration-500 ease-in-out"
