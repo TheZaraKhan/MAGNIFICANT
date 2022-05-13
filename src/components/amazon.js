@@ -31,9 +31,14 @@ export default function Amazon() {
                   </span>
                 </h3>
                 <div className="mt-10">
-                  <button className="px-6 relative text-gray-700 tracking-wide  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
-                    Visit Our Amazon Store
-                  </button>
+                  <a
+                    href="http://www.amazon.co.uk/dp/B09SBJ97DC?ref=myi_title_dp"
+                    target="_blank"
+                  >
+                    <button className="px-6 relative text-gray-700 tracking-wide  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
+                      Visit Our Amazon Store
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

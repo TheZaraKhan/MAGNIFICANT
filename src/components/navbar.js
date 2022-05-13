@@ -42,7 +42,10 @@ export default function Navbar() {
 
           <div className="hidden  md:block">
             <div className="grid gap-3 grid-cols-3 w-auto mx-auto">
-              <a href="https://www.facebook.com/belasikaofficial/">
+              <a
+                href="https://www.facebook.com/belasikaofficial/"
+                target="_blank"
+              >
                 <svg
                   className="svg mx-auto my-2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +69,10 @@ export default function Navbar() {
                 </svg>
               </a> */}
 
-              <a href="">
+              <a
+                href="https://www.instagram.com/belasikaofficial/"
+                target="_blank"
+              >
                 <svg
                   className="svg mx-auto my-2"
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +85,10 @@ export default function Navbar() {
                 </svg>
               </a>
 
-              <a href="">
+              <a
+                href="https://www.pinterest.co.uk/belasikaofficial"
+                target="_blank"
+              >
                 <svg
                   className="svg mx-auto mt-1"
                   xmlns="http://www.w3.org/2000/svg"

@@ -4,6 +4,27 @@ import React from "react";
 // import Zoom from "react-reveal/Zoom";
 
 export default function Footer() {
+  const [email, setEmail] = React.useState("");
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "newsletter", email }),
+    })
+      .then(() => alert("We have received your Email. Thanks for subscribing!"))
+      .catch((error) => alert(error));
+    e.preventDefault();
+  }
+
   return (
     <div className=" grid md:grid-cols-3 grid-cols-1 gap-5 w-3/4  mx-auto ">
       <div className="md:order-3  order-1  grid col-span-1 gap-3">
@@ -14,17 +35,23 @@ export default function Footer() {
           Subscribe to our Newsletter
         </label>
 
-        <div className=" flex  border-b-2 border-gray-500">
-          <input
-            id="newsletter"
-            type="email"
-            className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
-            placeholder="Enter your Email"
-          />
-          <button className="float-right">
-            <i className="fas fa-arrow-right  text-gray-700 hover:scale-125  transform cursor-pinter transition ease-in-out duration-500" />
-          </button>
-        </div>
+        <form netlify name="newsletter" onSubmit={handleSubmit} method="POST">
+          {" "}
+          <div className=" flex  border-b-2 border-gray-500">
+            {" "}
+            <input
+              id="email"
+              name="email"
+              type="email"
+              className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "
+              placeholder="Enter your Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button type="submit" className="float-right">
+              <i className="fas fa-arrow-right  text-gray-700 hover:scale-125  transform cursor-pinter transition ease-in-out duration-500" />
+            </button>
+          </div>{" "}
+        </form>
         {/* <button className="px-6 mt-2 relative text-gray-700 text-sm w-32 py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
           Submit
         </button> */}
@@ -34,7 +61,10 @@ export default function Footer() {
         <p className="text-xl   font-semibold text-gray-700">Follow us at</p>
         <div className="mt-3 ">
           <div className="grid gap-4 grid-cols-3 w-max  ">
-            <a href="https://www.facebook.com/belasikaofficial/">
+            <a
+              href="https://www.facebook.com/belasikaofficial/"
+              target="_blank"
+            >
               <svg
                 className="svg mx-auto my-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +88,10 @@ export default function Footer() {
               </svg>
             </a> */}
 
-            <a href="">
+            <a
+              href="https://www.instagram.com/belasikaofficial"
+              target="_blank"
+            >
               <svg
                 className="svg mx-auto my-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +104,10 @@ export default function Footer() {
               </svg>
             </a>
 
-            <a href="">
+            <a
+              href="https://www.pinterest.co.uk/belasikaofficial"
+              target="_blank"
+            >
               <svg
                 className="svg mx-auto mt-1"
                 xmlns="http://www.w3.org/2000/svg"
