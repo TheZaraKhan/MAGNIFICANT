@@ -4,6 +4,7 @@ export const products = [
     variation_code: "B002_1",
     name: "Pebbled Leather Tote",
     color: "Dark Brown",
+    UPC: 745808459871,
     color_code: [
       {
         code: "#4F3536",
@@ -123,6 +124,7 @@ export const products = [
     variation_code: "B002_2",
     name: "Pebbled Leather Tote",
     color: "light Brown",
+    UPC: 745808459864,
     color_code: [
       {
         code: "#4F3536",
@@ -240,6 +242,7 @@ export const products = [
     variation_code: "B001_1",
     name: "Vintage Leather Tote",
     color: "Dark Brown",
+    UPC: 745808459857,
     color_code: [
       {
         code: "#b2814c",
@@ -356,6 +359,7 @@ export const products = [
     variation_code: "B001_2",
     name: "Vintage Leather Tote",
     color: "Light Brown",
+    UPC: 745808459840,
     color_code: [
       {
         code: "#b2814c",

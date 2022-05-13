@@ -167,8 +167,10 @@ export const ProductView = (props) => {
                   </li>
                 </ul>
               </div>
-
-              <div className="mt-5">
+              <p className="my-2 font-light text-gray-500 text-sm">
+                UPC: {product.UPC}
+              </p>
+              <div className="mt-6">
                 <a href={product.buy_now} target="_blank" rel="noreferrer">
                   <button className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
                     Buy Now
