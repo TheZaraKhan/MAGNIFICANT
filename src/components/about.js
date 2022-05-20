@@ -22,7 +22,7 @@ export default function About() {
             leather and durable brass hardware. The minimalist stitch details
             highlight the beauty of the leather. Our rigorous manufacturing
             quality control standards are applied to every step to improve
-            confidence in our products. Virsa's leather bags are suitable for
+            confidence in our products. Belasika's leather bags are suitable for
             any type of occasion, from work to leisure. Our bags serve you as a
             faithful and trusted lifelong companion. And we hope to give our
             customers the best user experience possible.

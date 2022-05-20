@@ -32,11 +32,11 @@ export default function Amazon() {
                 </h3>
                 <div className="mt-10">
                   <a
-                    href="http://www.amazon.co.uk/dp/B09SBJ97DC?ref=myi_title_dp"
+                    href="https://www.amazon.co.uk/s?i=merchant-items&me=A2L0D9TC4RKEPK&rh=p_4%3ABELA%C5%9CIKA&dc&marketplaceID=A1F83G8C2ARO7P&qid=1653072053&ref=sr_nr_p_4_1"
                     target="_blank"
                   >
                     <button className="px-6 relative text-gray-700 tracking-wide  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
-                      Visit Our Amazon Store
+                      Buy our products on Amazon
                     </button>
                   </a>
                 </div>
