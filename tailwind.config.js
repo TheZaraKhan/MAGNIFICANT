@@ -28,10 +28,20 @@ module.exports = {
         nude: "#E1DDD9",
         neutral2: "#EBDACC",
       },
+      extend: {
+        aspectRatio: {
+          "aspect-square": "1 / 1",
+          "aspect-video": "16 / 9",
+          "4/3": "4 / 3",
+        },
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
