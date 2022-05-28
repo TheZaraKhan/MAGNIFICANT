@@ -182,12 +182,7 @@ export const ProductView = (props) => {
 
           <div className="lg:col-span-2  my-16">
             <div class="aspect-w-16 aspect-h-9">
-              <iframe
-                src={product.video}
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
+              <video src={product.video}></video>
             </div>
           </div>
           <div className="   lg:col-span-2">
