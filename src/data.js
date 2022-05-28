@@ -22,45 +22,60 @@ export const products = [
     disc_price: 69,
     display_images: [
       {
-        image: "./images/products/V_003/1.jpg",
+        image: "./images/products/B001_1/1.jpg",
         alt: "bag",
         key: "1",
       },
       {
-        image: "./images/products/V_003/9.jpg",
+        image: "./images/products/B001_1/5.jpg",
         alt: "bag",
         key: "2",
       },
     ],
     product_images: [
       {
-        image: "./images/products/V_003/1.jpg",
+        image: "./images/products/B001_1/1.jpg",
         alt: "Crazy Horse Leather Tote bag",
         key: "3",
       },
 
       {
-        image: "./images/products/V_003/2.jpg",
+        image: "./images/products/B001_1/2.jpg",
         alt: "Crazy Horse Leather Tote bag",
         key: "4",
       },
       {
-        image: "./images/products/V_003/3.jpg",
+        image: "./images/products/B001_1/4.jpg",
         alt: "Crazy Horse Leather Tote bag",
         key: "5",
       },
       {
-        image: "./images/products/V_003/8.jpg",
+        image: "./images/products/B001_1/3.jpg",
         alt: "Crazy Horse Leather Tote bag",
         key: "6",
       },
       {
-        image: "./images/products/V_003/9.jpg",
+        image: "./images/products/B001_1/6.jpg",
         alt: "Crazy Horse Leather Tote bag",
         key: "7",
       },
       {
-        image: "./images/products/V_003/6.jpg",
+        image: "./images/products/B001_1/7.jpg",
+        alt: "Crazy Horse Leather Tote bag",
+        key: "8",
+      },
+      {
+        image: "./images/products/B001_1/13.jpg",
+        alt: "Crazy Horse Leather Tote bag",
+        key: "8",
+      },
+      {
+        image: "./images/products/B001_1/17.jpg",
+        alt: "Crazy Horse Leather Tote bag",
+        key: "8",
+      },
+      {
+        image: "./images/products/B001_1/18.jpg",
         alt: "Crazy Horse Leather Tote bag",
         key: "8",
       },
@@ -101,19 +116,19 @@ export const products = [
 
     features: [
       {
-        img: "./images/products/V_003/4.jpg",
-        alt: "something",
-        desc: "This bag has the large capacity that can hold your Laptop, documents and books, and is even large enough to carry everything you need for an overnight trip.",
-      },
-      {
-        img: "./images/products/V_003/7.jpg",
-        alt: "something",
-        desc: " The leather handles are long enough to allow the bag to be slung over the shoulder. The handles are made entirely out of leather, so the longer you use this bag, the more they will mold to the shape of your shoulders.",
-      },
-      {
-        img: "./images/products/V_003/5.jpg",
+        img: "./images/products/B001_1/10.jpg",
         alt: "something",
         desc: "Our Adjustable Strap is designed to attach with D-rings for versatile ways of carrying your bag. with Adjustable strap you can easily convert the tote bag to a crossbody bag",
+      },
+      {
+        img: "./images/products/B001_1/9.jpg",
+        alt: "something",
+        desc: " This leather bag can take you from work to the weekend. This lightweight bag is large enough to hold your daily essentials, including a 15” laptop.",
+      },
+      {
+        img: "./images/products/B001_1/11.jpg",
+        alt: "something",
+        desc: "This bag has the large capacity that can hold your Laptop, documents and books, and is even large enough to carry everything you need for an overnight trip.",
       },
     ],
   },

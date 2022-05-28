@@ -180,18 +180,18 @@ export const ProductView = (props) => {
             </div>
           </div>
 
-          <div className="lg:col-span-2  my-16">
+          {/* <div className="lg:col-span-2  my-16">
             <div class="aspect-w-16 aspect-h-9">
               <video src={product.video}></video>
             </div>
-          </div>
+          </div> */}
           <div className="   lg:col-span-2">
-            <div className="mb-16 ">
+            <div className="mb-16   ">
               <h1 className=" text-4xl font-bold text-gray-700 text-center ">
                 Features
               </h1>
 
-              <div className="flex w-full gap-32  flex-wrap items-center">
+              <div className="flex w-full gap-x-32 gap-y-16 flex-wrap items-center">
                 <div className="lg:order-2 lg:flex-1 flex-initial">
                   <img
                     src={product.features[0].img}
@@ -199,13 +199,13 @@ export const ProductView = (props) => {
                   />
                 </div>
                 <div className=" lg:order-1 lg:flex-1 flex-initial flex items-center">
-                  <p className="text-2xl  font-extralight text-gray-500">
+                  <p className="sm:text-2xl text-xl sm:mb-0 mb-16  font-extralight text-gray-500">
                     {product.features[0].desc}
                   </p>
                 </div>
               </div>
 
-              <div className="flex w-full gap-32  flex-wrap items-center">
+              <div className="flex w-full  gap-x-32 gap-y-16  flex-wrap items-center">
                 <div className="lg:flex-1 flex-initial">
                   <img
                     src={product.features[1].img}
@@ -213,13 +213,13 @@ export const ProductView = (props) => {
                   />
                 </div>
                 <div className="lg:flex-1 flex-initial  flex items-center">
-                  <p className="text-2xl  font-light text-gray-500">
+                  <p className="sm:text-2xl text-xl sm:mb-0 mb-16 font-light text-gray-500">
                     {product.features[1].desc}
                   </p>
                 </div>
               </div>
 
-              <div className="flex w-full gap-32  flex-wrap items-center">
+              <div className="flex w-full  gap-x-32 gap-y-16  flex-wrap items-center">
                 <div className="lg:order-2 lg:flex-1 flex-initial">
                   <img
                     src={product.features[2].img}
@@ -227,7 +227,7 @@ export const ProductView = (props) => {
                   />
                 </div>
                 <div className=" lg:order-1 lg:flex-1 flex-initial  flex items-center">
-                  <p className="text-2xl  font-light text-gray-500">
+                  <p className="sm:text-2xl text-xl  sm:mb-0 mb-16    font-light text-gray-500">
                     {product.features[2].desc}
                   </p>
                 </div>
