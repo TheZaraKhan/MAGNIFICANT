@@ -274,9 +274,11 @@ export const ProductView = (props) => {
                           </p>
                         </div>
                         <div className="flex-none">
-                          <button className="px-4 relative text-sm  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
-                            Buy Now
-                          </button>
+                          <a target="_blank" href={filteredProducts.buy_now}>
+                            <button className="px-4 relative text-sm  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
+                              Buy Now
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
