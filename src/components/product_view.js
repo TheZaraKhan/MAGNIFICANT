@@ -180,11 +180,21 @@ export const ProductView = (props) => {
             </div>
           </div>
 
-          {/* <div className="lg:col-span-2  my-16">
-            <div class="aspect-w-16 aspect-h-9">
-              <video src={product.video}></video>
+          <div className="lg:col-span-2  my-16">
+            <div className=" aspect-w-16 aspect-h-9">
+              <video
+                controls
+                disablePictureInPicture
+                controlsList="noplaybackrate nodownload "
+              >
+                <source
+                  autoplay="false"
+                  src={product.video}
+                  type="video/mp4"
+                ></source>
+              </video>
             </div>
-          </div> */}
+          </div>
           <div className="   lg:col-span-2">
             <div className="mb-16   ">
               <h1 className=" text-4xl font-bold text-gray-700 text-center ">
