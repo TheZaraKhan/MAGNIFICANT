@@ -28,6 +28,24 @@ export const ProductView = (props) => {
     }, []);
   };
 
+  const [button, productName] = React.useState("");
+
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function buttonClick(e) {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "buynow", button }),
+    });
+  }
+
   return (
     <section id="" className="lg:pt-32 p-3">
       <div className="lg:w-4/5  mx-auto w-full">
@@ -171,11 +189,23 @@ export const ProductView = (props) => {
                 UPC: {product.UPC}
               </p>
               <div className="mt-6">
-                <a href={product.buy_now} target="_blank" rel="noreferrer">
-                  <button className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
-                    Buy Now
-                  </button>
-                </a>
+                <form
+                  netlify
+                  name="buynow"
+                  onSubmit={buttonClick}
+                  method="POST"
+                >
+                  <a href={product.buy_now} target="_blank" rel="noreferrer">
+                    <button
+                      name="buybutton"
+                      onClick={(e) => productName(e.product.name)}
+                      type="submit"
+                      className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
+                    >
+                      Buy Now
+                    </button>
+                  </a>
+                </form>
               </div>
             </div>
           </div>
@@ -284,11 +314,25 @@ export const ProductView = (props) => {
                           </p>
                         </div>
                         <div className="flex-none">
-                          <a target="_blank" href={filteredProducts.buy_now}>
-                            <button className="px-4 relative text-sm  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500">
-                              Buy Now
-                            </button>
-                          </a>
+                          <form
+                            netlify
+                            name="buynow"
+                            onSubmit={buttonClick}
+                            method="POST"
+                          >
+                            <a target="_blank" href={filteredProducts.buy_now}>
+                              <button
+                                name="buybutton"
+                                onClick={(e) =>
+                                  productName(e.filteredProducts.name)
+                                }
+                                type="submit"
+                                className="px-4 relative text-sm  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
+                              >
+                                Buy Now
+                              </button>
+                            </a>
+                          </form>
                         </div>
                       </div>
                     </div>
