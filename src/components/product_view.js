@@ -329,25 +329,15 @@ export const ProductView = (props) => {
                           </p>
                         </div>
                         <div className="flex-none">
-                          <form
-                            netlify
-                            name="buynow"
-                            onSubmit={buttonClick}
-                            method="POST"
-                          >
-                            <a target="_blank" href={filteredProducts.buy_now}>
-                              <button
-                                name="buybutton"
-                                onClick={(e) =>
-                                  productName(e.filteredProducts.name)
-                                }
-                                type="submit"
-                                className="px-4 relative text-sm  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
-                              >
-                                Buy Now
-                              </button>
-                            </a>
-                          </form>
+                          <a target="_blank" href={filteredProducts.buy_now}>
+                            <button
+                              name="buybutton"
+                              type="submit"
+                              className="px-4 relative text-sm  py-1 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
+                            >
+                              Buy Now
+                            </button>
+                          </a>
                         </div>
                       </div>
                     </div>
