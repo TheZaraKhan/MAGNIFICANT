@@ -28,7 +28,7 @@ export const ProductView = (props) => {
     }, []);
   };
 
-  const [button, productName] = React.useState("");
+  const [name, productName] = React.useState("");
 
   function encode(data) {
     return Object.keys(data)
@@ -42,10 +42,10 @@ export const ProductView = (props) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "buynow", e }),
+      body: encode({ "form-name": "buynow", name }),
     });
-    // .then(() => alert("We have received your Email. Thanks for subscribing!"))
-    // .catch((error) => alert(error));
+
+    e.preventDefault();
   }
 
   return (
@@ -191,38 +191,36 @@ export const ProductView = (props) => {
                 UPC: {product.UPC}
               </p>
               <div className="mt-6">
-                <a href={product.buy_now} target="_blank" rel="noreferrer">
-                  <form
-                    netlify
-                    name="buynow"
-                    onSubmit={buttonClick}
-                    method="POST"
+                <form
+                  netlify
+                  name="buynow"
+                  onSubmit={buttonClick}
+                  method="POST"
+                >
+                  <input
+                    className="hidden"
+                    type="text"
+                    name="productname"
+                    onChange={(e) => this.productName(e.target.value)}
+                    value={
+                      "Click on " +
+                      product.name +
+                      " - " +
+                      product.color +
+                      " from product page."
+                    }
+                  />
+                  <button
+                    name="buybutton"
+                    type="submit"
+                    className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
+                    onClick={() => {
+                      window.open(product.buy_now, "_blank");
+                    }}
                   >
-                    <input
-                      className="hidden"
-                      type="text"
-                      name="productname"
-                      onChange={(e) => productName(e.target.value)}
-                      value={
-                        "Click on " +
-                        product.name +
-                        " - " +
-                        product.color +
-                        " from product page."
-                      }
-                    />
-                    <button
-                      name="buybutton"
-                      type="submit"
-                      className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
-                      onClick={() => {
-                        window.open(product.buy_now, "_blank");
-                      }}
-                    >
-                      Buy Now
-                    </button>
-                  </form>
-                </a>
+                    Buy Now
+                  </button>
+                </form>
               </div>
             </div>
           </div>
