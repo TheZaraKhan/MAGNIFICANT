@@ -192,19 +192,23 @@ export const ProductView = (props) => {
                 UPC: {product.UPC}
               </p>
               <div className="mt-6">
-                <form
-                  netlify
-                  name="buynow"
-                  onSubmit={buttonClick}
-                  method="POST"
-                >
-                  <input
-                    type="text"
-                    id="productname"
-                    onChange={(e) => productName(e.target.value)}
-                    value={product.name + product.color}
-                  />
-                  <a href={product.buy_now} target="_blank" rel="noreferrer">
+                <a href={product.buy_now} target="_blank" rel="noreferrer">
+                  {" "}
+                  <form
+                    netlify
+                    name="buynow"
+                    onSubmit={buttonClick}
+                    method="POST"
+                  >
+                    <input
+                      className="hidden"
+                      type="text"
+                      id="productname"
+                      name="productname"
+                      onChange={(e) => productName(e.target.value)}
+                      value={product.name + product.color}
+                    />
+
                     <button
                       name="buybutton"
                       type="submit"
@@ -212,8 +216,8 @@ export const ProductView = (props) => {
                     >
                       Buy Now
                     </button>
-                  </a>
-                </form>
+                  </form>{" "}
+                </a>
               </div>
             </div>
           </div>
