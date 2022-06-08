@@ -42,8 +42,11 @@ export const ProductView = (props) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "buynow", button }),
+      body: encode({ "form-name": "buynow", e }),
     });
+    // .then(() => alert("We have received your Email. Thanks for subscribing!"))
+    // .catch((error) => alert(error));
+    e.preventDefault();
   }
 
   return (
@@ -195,10 +198,15 @@ export const ProductView = (props) => {
                   onSubmit={buttonClick}
                   method="POST"
                 >
+                  <input
+                    type="text"
+                    id="productname"
+                    onChange={(e) => productName(e.target.value)}
+                    value={product.name + product.color}
+                  />
                   <a href={product.buy_now} target="_blank" rel="noreferrer">
                     <button
                       name="buybutton"
-                      onClick={(e) => productName(e.product.name)}
                       type="submit"
                       className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
                     >

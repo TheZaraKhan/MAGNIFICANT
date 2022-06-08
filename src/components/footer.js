@@ -19,9 +19,8 @@ export default function Footer() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "newsletter", email }),
-    })
-      .then(() => alert("We have received your Email. Thanks for subscribing!"))
-      .catch((error) => alert(error));
+    }).then(() => e);
+
     e.preventDefault();
   }
 
