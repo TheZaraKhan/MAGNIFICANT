@@ -192,14 +192,14 @@ export const ProductView = (props) => {
               </p>
               <div className="mt-6">
                 <form
-                  netlify
+                  data-netlify="true"
                   name="buynow"
                   onSubmit={buttonClick}
                   method="POST"
                 >
+                  <input type="hidden" name="form-name" value="buynow" />
                   <input
-                    className="hidden"
-                    type="text"
+                    type="hidden"
                     name="productname"
                     onChange={(e) => productName(e.target.value)}
                     value={
