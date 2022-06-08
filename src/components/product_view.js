@@ -42,7 +42,7 @@ export const ProductView = (props) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "buynow", event }),
+      body: encode({ "form-name": "buynow", e }),
     });
     // .then(() => alert("We have received your Email. Thanks for subscribing!"))
     // .catch((error) => alert(error));
@@ -202,7 +202,7 @@ export const ProductView = (props) => {
                       className="hidden"
                       type="text"
                       name="productname"
-                      onChange={(event) => productName(event.target.value)}
+                      onChange={(e) => productName(e.target.value)}
                       value={
                         "Click on " +
                         product.name +
