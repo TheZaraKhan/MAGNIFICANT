@@ -201,7 +201,7 @@ export const ProductView = (props) => {
                     className="hidden"
                     type="text"
                     name="productname"
-                    onChange={(e) => this.productName(e.target.value)}
+                    onChange={(e) => productName(e.target.value)}
                     value={
                       "Click on " +
                       product.name +
