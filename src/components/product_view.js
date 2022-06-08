@@ -193,7 +193,6 @@ export const ProductView = (props) => {
               </p>
               <div className="mt-6">
                 <a href={product.buy_now} target="_blank" rel="noreferrer">
-                  {" "}
                   <form
                     netlify
                     name="buynow"
@@ -206,17 +205,25 @@ export const ProductView = (props) => {
                       id="productname"
                       name="productname"
                       onChange={(e) => productName(e.target.value)}
-                      value={product.name + product.color}
+                      value={
+                        "Click on " +
+                        product.name +
+                        " - " +
+                        product.color +
+                        " from product page."
+                      }
                     />
-
                     <button
                       name="buybutton"
                       type="submit"
                       className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
+                      onClick={() => {
+                        window.open(product.buy_now, "_blank");
+                      }}
                     >
                       Buy Now
                     </button>
-                  </form>{" "}
+                  </form>
                 </a>
               </div>
             </div>
