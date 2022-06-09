@@ -198,11 +198,11 @@ export const ProductView = (props) => {
                   method="POST"
                 >
                   <input type="hidden" name="form-name" value="buynow" />
-                  {/* <input
+                  <input
                     className="hidden"
                     type="text"
                     name="productname"
-                    ref={(e) => productName(e.target.value)}
+                    onSubmit={(e) => productName(e.target.value)}
                     defaultValue={
                       "Click on " +
                       product.name +
@@ -210,20 +210,14 @@ export const ProductView = (props) => {
                       product.color +
                       " from product page."
                     }
-                  /> */}
+                  />
                   <button
                     name="buybutton"
                     type="submit"
                     className="px-6 relative  py-2 border-gray-700 border-2 hover:bg-gray-700 hover:text-gray-50 text-center transition ease-in-out duration-500"
-                    onClick={() =>
-                      productName(
-                        "Click on " +
-                          product.name +
-                          " - " +
-                          product.color +
-                          " from product page."
-                      )
-                    }
+                    onClick={() => {
+                      window.open(product.buy_now, "_blank");
+                    }}
                   >
                     Buy Now
                   </button>
