@@ -202,7 +202,7 @@ export const ProductView = (props) => {
                     className="hidden"
                     type="text"
                     name="productname"
-                    onSubmit={(e) => productName(e.target.value)}
+                    onSubmit={(e) => productName(e.target.defaultValue)}
                     defaultValue={
                       "Click on " +
                       product.name +
