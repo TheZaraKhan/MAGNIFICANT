@@ -199,7 +199,8 @@ export const ProductView = (props) => {
                 >
                   <input type="hidden" name="form-name" value="buynow" />
                   <input
-                    type="hidden"
+                    className="hidden"
+                    type="text"
                     name="productname"
                     onChange={(e) => productName(e.target.value)}
                     defaultValue={
