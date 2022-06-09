@@ -16,6 +16,11 @@ import { useEffect } from "react";
 // }
 
 //
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
 
 export const ProductView = (props) => {
   const { productId } = useParams();
@@ -29,14 +34,6 @@ export const ProductView = (props) => {
   };
 
   const [name, productName] = React.useState("");
-
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
 
   function buttonClick(e) {
     fetch("/", {
