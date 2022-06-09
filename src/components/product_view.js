@@ -202,7 +202,7 @@ export const ProductView = (props) => {
                     className="hidden"
                     type="text"
                     name="productname"
-                    onChange={(e) => productName(e.target.value)}
+                    ref={(e) => productName(e.target.value)}
                     defaultValue={
                       "Click on " +
                       product.name +
