@@ -17,9 +17,9 @@ export const products = [
         outline: " 1px solid black",
       },
     ],
-    price: 84,
+    price: 74,
     link: "vintage-tote-darkbrown",
-    disc_price: 84,
+    disc_price: 74,
     display_images: [
       {
         image: "./images/products/B001_1/1.jpg",
@@ -146,9 +146,9 @@ export const products = [
       },
       { code: "#4F3536", link: "vintage-tote-darkbrown", outline: " " },
     ],
-    price: 84,
+    price: 74,
     link: "vintage-tote-lightbrown",
-    disc_price: 84,
+    disc_price: 74,
     display_images: [
       {
         image: "./images/products/B001_2/1.jpg",
