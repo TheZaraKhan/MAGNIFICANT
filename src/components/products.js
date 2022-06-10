@@ -46,9 +46,9 @@ export const Products = (props) => {
                       — £{product.disc_price}.
                       <span className="text-xs">99</span>
                     </span>
-                    <span className="ml-4 font-medium text-gray-400 line-through">
+                    {/* <span className="ml-4 font-medium text-gray-400 line-through">
                       £{product.price}.<span className="text-xs">99</span>
-                    </span>
+                    </span> */}
                   </p>
                 </div>
                 <div className="flex-none">

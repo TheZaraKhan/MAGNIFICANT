@@ -19,7 +19,7 @@ export const products = [
     ],
     price: 84,
     link: "vintage-tote-darkbrown",
-    disc_price: 69,
+    disc_price: 84,
     display_images: [
       {
         image: "./images/products/B001_1/1.jpg",
@@ -148,7 +148,7 @@ export const products = [
     ],
     price: 84,
     link: "vintage-tote-lightbrown",
-    disc_price: 69,
+    disc_price: 84,
     display_images: [
       {
         image: "./images/products/B001_2/1.jpg",
@@ -267,7 +267,7 @@ export const products = [
     ],
     price: 74,
     link: "pebbled-tote-darkbrown",
-    disc_price: 59,
+    disc_price: 64,
     display_images: [
       {
         image: "./images/products/B002_1/1.jpg",
@@ -388,7 +388,7 @@ export const products = [
     ],
     price: 74,
     link: "pebbled-tote-lightbrown",
-    disc_price: 59,
+    disc_price: 64,
     display_images: [
       {
         image: "./images/products/B002_2/1.jpg",

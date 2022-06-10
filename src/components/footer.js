@@ -19,8 +19,9 @@ export default function Footer() {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "newsletter", email }),
-    }).then(() => e);
-
+    })
+      .then(() => alert("We have received your Email. Thanks for subscribing!"))
+      .catch((error) => alert(error));
     e.preventDefault();
   }
 
@@ -40,6 +41,7 @@ export default function Footer() {
             {" "}
             <input
               id="email"
+              
               name="email"
               type="email"
               className="py-2 flex-grow  text-gray-700 bg-neutral bg-opacity-20  focus:outline-none text-sm  "

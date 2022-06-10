@@ -93,9 +93,9 @@ export const ProductView = (props) => {
                 <span className=" font-medium text-gray-700 ordinal">
                   — £{product.disc_price}.<span className="text-xs">99</span>
                 </span>
-                <span className="ml-4 font-medium text-gray-400 line-through">
+                {/* <span className="ml-4 font-medium text-gray-400 line-through">
                   £{product.price}.<span className="text-xs">99</span>
-                </span>
+                </span> */}
               </p>
               <p className=" text-lg text-gray-600 mt-5">{product.color}</p>
               <div className="flex gap-3 mt-5">
@@ -320,10 +320,10 @@ export const ProductView = (props) => {
                               — £{filteredProducts.disc_price}.
                               <span className="text-xs">99</span>
                             </span>
-                            <span className="ml-4 font-medium font-mono   text-gray-400 line-through">
+                            {/* <span className="ml-4 font-medium font-mono   text-gray-400 line-through">
                               £{filteredProducts.price}.
                               <span className="text-xs">99</span>
-                            </span>
+                            </span> */}
                           </p>
                         </div>
                         <div className="flex-none">
