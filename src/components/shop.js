@@ -4,12 +4,14 @@ import React from "react";
 
 import { Products } from "./products";
 import Amazon from "./amazon";
+import Instagram from "./instagram";
 export default function Shop() {
   return (
     <section id="" className=" ">
       <div className=" mt-32 mx-auto w-full">
         <Products tag="/shop/" />
         <Amazon />
+        <Instagram />
       </div>
     </section>
   );

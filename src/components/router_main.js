@@ -15,7 +15,7 @@ export default function RouterMain() {
       <Products tag="/shop/" />
       <Amazon />
       <About />
-      {/* <Instagram /> */}
+      <Instagram />
     </section>
   );
 }
