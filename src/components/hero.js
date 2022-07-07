@@ -7,7 +7,7 @@ import React from "react";
 export default function Hero() {
   return (
     <section className=" ">
-      <div className="min-h-screen py-32 sm:py-16 flex items-center  relative  bg-gradient-to-b from-beige via-beige  to-white">
+      <div className="min-h-screen py-32 sm:py-16 flex items-center  relative  bg-gradient-to-b  from-white via-beige  to-white">
         <div className="flex items-center w-full flex-wrap">
           <div className="md:flex-1 flex-initial w-full">
             <div className=" md:pl-24 sm:mt-44 lg:mt-0  relative sm:mx-0 mx-3 z-10 text-center md:text-left ">

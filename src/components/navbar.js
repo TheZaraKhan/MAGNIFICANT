@@ -128,7 +128,7 @@ export default function Navbar() {
         />
         <div
           hidden
-          className="bg-gray-200 menu h-full right-0 fixed w-auto  z-10  "
+          className="bg-gray-200 menu h-full right-0 fixed w-auto  z-20  "
         >
           <i className="fas fa-times cross h-6 float-right m-6   text-gray-500" />
           {/* <XIcon className="cross h-6 float-right m-6  text-red-50 " /> */}

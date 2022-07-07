@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         head: "url('images/header2.jpg')",
-        header: "url('images/header.jpg')",
+        header: "url('images/2.jpg')",
         pebbled: "url('images/a.png')",
         store_link: "url('images/store-link.jpeg')",
         section: "url('images/section.png')",
