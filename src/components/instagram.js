@@ -11,12 +11,12 @@ export default function Instagram() {
       <h1 className="text-4xl mb-12 text-gray-700 font-bold  text-center  ">
         Follow us on Instagram
       </h1>
-      <p
+      <a
         href="https://www.instagram.com/belasikaofficial/"
         className="text-sm text-gray-600 hover:text-gray-800"
       >
         @belasikaofficial
-      </p>
+      </a>
       <div className="  w-5/6 mx-auto gap-16 mt-12 flex flex-wrap items-center">
         <InstagramFeed
           token="IGQVJYWXdKQlQ4UkJnWUo3eE5uRnBTVndlSEJBVlVfeHItbHFtMEZAQNllybUtUSUxYaXQ1VlVmQ2tWcy1WX1hNa1VxdE9ualhBaUhhSXdFTGhaWEVJd2YxZA1NfYUFQWXoxd2xTcG5VcFNhMC1TMmxRbwZDZD"
